@@ -69,6 +69,20 @@
               </router-link>
             </el-menu-item-group>
           </el-submenu>
+          <el-submenu index="2">
+            <template slot="title">
+              <i class="el-icon-goods"></i>
+              <span>商品管理</span>
+            </template>
+            <el-menu-item-group>
+              <router-link to="/tabbar/addGd" class="service">
+                <el-menu-item index="1-1">添加商品</el-menu-item>
+              </router-link>
+              <router-link to="/tabbar/goodList" class="service">
+                <el-menu-item index="1-2 ">商品列表</el-menu-item>
+              </router-link>
+            </el-menu-item-group>
+          </el-submenu>
         </el-menu>
       </el-col>
     </el-row>

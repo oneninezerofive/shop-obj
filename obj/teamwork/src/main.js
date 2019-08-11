@@ -44,6 +44,8 @@ const Username = () => import('./views/Tabbar/Username.vue');
 const Add = () => import('./views/Tabbar/Add.vue');
 const Changepwd = () => import('./views/Tabbar/Changepwd.vue');
 const Shop = () => import('./views/Tabbar/Shop.vue');
+const GoodList = () => import('./views/Tabbar/shop/GoodList.vue');
+const Addgd = () => import('./views/Tabbar/shop/Addgd.vue');
 
 
 
@@ -70,6 +72,14 @@ const routes = [
         name: 'shop',
         path: '/tabbar/shop',
         component: Shop,
+      }, {
+        name: 'goodList',
+        path: '/tabbar/goodList',
+        component: GoodList
+      }, {
+        name: 'addGd',
+        path: '/tabbar/addGd',
+        component: Addgd,
       },
 
     ]
