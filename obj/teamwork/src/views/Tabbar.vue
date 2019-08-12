@@ -69,6 +69,17 @@
               </router-link>
             </el-menu-item-group>
           </el-submenu>
+          <el-submenu index="2">
+            <template slot="title">
+              <i class="el-icon-location"></i>
+              <span>订单管理</span>
+            </template>
+            <el-menu-item-group>
+              <router-link to="/tabbar/order" class="service">
+                <el-menu-item index="1-1">订单</el-menu-item>
+              </router-link>
+            </el-menu-item-group>
+          </el-submenu>
         </el-menu>
       </el-col>
     </el-row>
