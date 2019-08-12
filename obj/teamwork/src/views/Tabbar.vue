@@ -129,7 +129,7 @@ export default {
 <style>
 #content {
   height: 500px;
-  width: 1300px;
+  width: 100%;
   position: absolute;
   left: 230px;
 }
