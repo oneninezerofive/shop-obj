@@ -48,7 +48,9 @@ import {
     //轻提示
     Toast,
     //提交订单栏
-    SubmitBar
+    SubmitBar,
+    Row,
+    Col
 
 } from 'vant';
 
@@ -90,4 +92,5 @@ export default () => {
     //mint 
     Vue.component(Header.name, Header);
     Vue.use(button);
+    Vue.use(Row).use(Col);
 }

@@ -74,6 +74,25 @@ const deleteOne = (col, params) => {
         client.close();
     })
 }
+// const remov = (col, par) => {
+//     return new Promise(async (resolve, reject) => {
+//         let client = await connect();
+//         const db = client.db(dbName);
+//         // 选中表
+//         const collection = db.collection(col);
+//         // Find some documents
+//         collection.deleteOne(par, function (err, result) {
+//             if (err) {
+//                 throw err;
+//                 reject(err);
+//             }
+//             else {
+//                 resolve(result);
+//             }
+//         });
+//         client.close();
+//     });
+// }
 //增
 const insertMany = (col, params) => {
     return new Promise(async (resolve, reject) => {
@@ -124,6 +143,27 @@ const updateOne = (col, params, param) => {
         client.close();
     })
 }
+// const updata = (col, par, par2) => {
+//     return new Promise(async (resolve, reject) => {
+//         let client = await connect();
+//         const db = client.db(dbName);
+//         // 选中表
+//         const collection = db.collection(col);
+//         // Find some documents
+//         collection.updateOne(par, { $set: par2 }, function (err, result) {
+//             // console.log("Found the following records");
+//             // console.log(docs)
+//             if (err) {
+//                 throw err;
+//                 reject(err);
+//             }
+//             else {
+//                 resolve(result);
+//             }
+//         });
+//         client.close();
+//     });
+// }
 //传出方法
 module.exports = {
     updateOne,
@@ -132,5 +172,7 @@ module.exports = {
     deleteOne,
     connect,
     // // 根据id查找
-    ObjectId
+    ObjectId,
+    // remov,
+    // updata
 }

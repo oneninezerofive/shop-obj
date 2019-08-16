@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b5f55"],{"1ab1":function(t,n,e){"use strict";e.r(n);var s=function(){var t=this,n=t.$createElement;t._self._c;return t._m(0)},c=[function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",[e("div",{staticClass:"mineclass",attrs:{id:"content"}},[t._v("这里写修改商品信息管理-组件")])])}],a=e("2877"),i={},l=Object(a["a"])(i,s,c,!1,null,null,null);n["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d0b5f55.2aa5d62b.js.map
