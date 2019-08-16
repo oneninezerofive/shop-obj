@@ -45,6 +45,9 @@ const Add = () => import('./views/Tabbar/Add.vue');
 const Changepwd = () => import('./views/Tabbar/Changepwd.vue');
 const Shop = () => import('./views/Tabbar/Shop.vue');
 const Order = () => import('./views/Tabbar/Order.vue');
+const GoodList = () => import('./views/Tabbar/shop/GoodList.vue');
+const Addgd = () => import('./views/Tabbar/shop/Addgd.vue');
+
 
 
 //路由
@@ -55,27 +58,32 @@ const routes = [
     path: '/',
     component: Tabbar,
     children: [{
-      name: 'username',
-      path: '/tabbar/username',
-      component: Username,
-    }, {
-      name: 'add',
-      path: '/tabbar/add',
-      component: Add,
-    }, {
-      name: 'changepwd',
-      path: '/tabbar/changepwd',
-      component: Changepwd,
-    }, {
-      name: 'shop',
-      path: '/tabbar/shop',
-      component: Shop,
-    },
-    {
-      name: 'order',
-      path: '/tabbar/order',
-      component: Order,
-    },
+        name: 'username',
+        path: '/tabbar/username',
+        component: Username,
+      }, {
+        name: 'add',
+        path: '/tabbar/add',
+        component: Add,
+      }, {
+        name: 'changepwd',
+        path: '/tabbar/changepwd',
+        component: Changepwd,
+      },
+      {
+        name: 'order',
+        path: '/tabbar/order',
+        component: Order,
+      },
+      {
+        name: 'goodList',
+        path: '/tabbar/goodList',
+        component: GoodList
+      }, {
+        name: 'addGd',
+        path: '/tabbar/addGd',
+        component: Addgd,
+      },
 
     ]
   },

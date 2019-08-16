@@ -64,19 +64,22 @@
               <router-link to="/tabbar/changepwd" class="service">
                 <el-menu-item index="1-3">修改密码</el-menu-item>
               </router-link>
-              <router-link to="/tabbar/shop" class="service">
+              <router-link to="/tabbar/order" class="service">
                 <el-menu-item index="1-4">商品信息管理</el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
-              <i class="el-icon-location"></i>
-              <span>订单管理</span>
+              <i class="el-icon-goods"></i>
+              <span>商品管理</span>
             </template>
             <el-menu-item-group>
-              <router-link to="/tabbar/order" class="service">
-                <el-menu-item index="1-1">订单</el-menu-item>
+              <router-link to="/tabbar/addGd" class="service">
+                <el-menu-item index="1-1">添加商品</el-menu-item>
+              </router-link>
+              <router-link to="/tabbar/goodList" class="service">
+                <el-menu-item index="1-2 ">商品列表</el-menu-item>
               </router-link>
             </el-menu-item-group>
           </el-submenu>
